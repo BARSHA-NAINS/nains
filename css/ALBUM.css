@@ -1,0 +1,36 @@
+
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.gallery{
+  margin:10px 50px;
+
+ }
+ .gallery img{
+  width: 230px;
+  padding: 5px;
+  filter: grayscale(100%);
+  transition: 1s;
+  border-radius: 5px;
+ }
+
+ .gallery img:hover{
+  filter: grayscale(0);
+  transform: scale(1.1);
+ }
+
+

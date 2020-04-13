@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../css/lightbox.min.css">
+<script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
+<style>
+@font-face{
+  font-family: "samarn";src:url("../fonts/fontspace/SAMARN__.ttf");
+}
+h1{font-family: samarn;}
+    
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+.J{
+  font-family: samarn;
+  font-size: 20px;
+
+}
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 15px;
+}
+
+input[type=submit] {
+  background-color: #146714;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: inherit;
+  border-radius: 4px;
+}
+
+input[type=submit]:hover {
+  background-color: #d6590d;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #efecec;
+  padding: 10px;
+  padding-bottom: 2rem;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+  font-size: large;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+h1{
+  margin-left: 27px;
+    font-size: 45px;
+    color: #d6590d;
+}
+h2{
+  color:#146714;
+  margin-bottom: 13px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>rupitra</h1>
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Me</h2>
+    <p style="font-family: 'Kaushan Script', cursive;font-family: 'Kaushan Script', cursive;font-size: 22px;margin-top: 0px;margin-bottom: 50px; color: saddlebrown;">Swing by for a cup of coffee, or leave me a message:</p>
+  </div>
+  <div class="row">
+    <div class="column" style="padding: 2rem 7rem;">
+      <a href="../images/cml.jpg" data-lightbox="mygallery"><img src="../images/cm.jpg" title="RUPITRA.ml" alt="rupitrabh.ml"></a>
+    </div>
+    <div class="column">
+      <form action="contact.php" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name..">
+        <label for="email">Email ID</label>
+        <input type="text" id="email" name="emailid" placeholder="Your Email.">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="india">India</option>
+          <option value="japan">Japan</option>
+          <option value="usa">USA</option>
+          <option value="indonesia">Indonesia</option>
+          <option value="argentina">Argentina</option>
+        </select>
+        <label for="feedback">Feedback</label>
+        <select id="feedback" name="feedback" placeholder="what do you feel about the page?">
+          <option value="amazing">Amazing</option>
+          <option value="impressive">Impressive</option>
+          <option value="keep it up">Keep It Up</option>
+          <option value="not so good">Not So Good</option>
+          <option value="boring">Boring</option>
+        </select>
+        <label for="remarks">Remarks if any</label>
+        <textarea id="remarks" name="remarks" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Send message">
+      </form>
+    </div>
+  </div>
+</div>
+<footer>
+  <a style="color: dimgrey;">&copy; 2019 <span class="J">Rupitra</span> - All Rights Reserved.</a>          
+</footer>
+
+</body>
+</html>
